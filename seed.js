@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Book = require('./models/Book'); // Adjust the path if necessary
+const Book = require('./models/Book');
 require('dotenv').config();
 
 const seedBooks = async () => {
