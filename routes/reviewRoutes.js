@@ -19,7 +19,7 @@
 // // Route to update a review
 // router.put('/:reviewId', authenticateToken, updateReview);
 
-// module.exports = router;
+
 const express = require('express');
 const { addReview, deleteReview, getReviewsByBookId, updateReview, getReviewById } = require('../controllers/reviewController'); // Ensure updateReview is included
 const authenticateToken = require('../middleware/authMiddleware'); // Middleware to authenticate user

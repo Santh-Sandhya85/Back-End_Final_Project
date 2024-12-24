@@ -52,7 +52,6 @@ const getBooksByTitle = async (title) => {
     }
 };
 
-// Example Usage
 const run = async () => {
     console.log('Fetching all books...');
     await getAllBooks();
@@ -67,7 +66,6 @@ const run = async () => {
     await getBooksByTitle('The Hobbit'); // Replace with a valid title
 };
 
-// Uncomment to run the example usage
 run();
 
 // module.exports = {
