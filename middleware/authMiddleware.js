@@ -1,3 +1,4 @@
+// It is a middleware function that checks if the user is authenticated or not.
 const jwt = require('jsonwebtoken');
 
 const authenticateToken = (req, res, next) => {

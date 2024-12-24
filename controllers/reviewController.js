@@ -30,7 +30,7 @@ exports.getReviewsByBookId = async (req, res) => {
     }
 };
 
-// Function to get a review by ID
+// function to get a review by ID
 exports.getReviewById = async (req, res) => {
     const { reviewId } = req.params;
 

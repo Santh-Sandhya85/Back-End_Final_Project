@@ -5,8 +5,8 @@ const reviewSchema = new mongoose.Schema({
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
     content: { type: String, required: true },
 }, {
-    toJSON: { virtuals: true, versionKey: false }, // Exclude __v
-    toObject: { virtuals: true, versionKey: false } // Exclude __v
+    toJSON: { virtuals: true, versionKey: false },
+    toObject: { virtuals: true, versionKey: false }
 });
 
 module.exports = mongoose.model('Review', reviewSchema);

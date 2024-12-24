@@ -6,8 +6,8 @@ const bookSchema = new mongoose.Schema({
     isbn: { type: String, required: true, unique: true },
     reviews: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Review' }],
 }, {
-    toJSON: { virtuals: true, versionKey: false }, // Exclude __v
-    toObject: { virtuals: true, versionKey: false } // Exclude __v
+    toJSON: { virtuals: true, versionKey: false },
+    toObject: { virtuals: true, versionKey: false }
 });
 
 module.exports = mongoose.model('Book', bookSchema);

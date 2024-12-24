@@ -63,7 +63,7 @@ exports.getBookByISBN = (req, res) => {
         });
 };
 
-// Task 12: Search by Author using Async/Await
+// Task 12: search by Author using Async/Await
 exports.getBooksByAuthor = async (req, res) => {
     const { author } = req.params;
     try {
